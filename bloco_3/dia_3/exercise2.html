@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Challenge: Position planet</title>
+    <style>
+        #greeting {
+            background: rgb(255, 255, 0);
+            border: 2px solid black;
+            font-family: "Comic Sans MS", fantasy;
+            padding: 5px;
+            width: 262px;
+            
+            position: absolute;
+            top: 10px;
+            left: 145px;
+            z-index: 2;
+            
+        }
+          
+        #creature {
+            position: absolute;
+            top: 65px;
+            left: 45px;
+            z-index: 1;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Essa página web contém uma imagem de um planeta, uma imagem de uma criatura, e uma div com uma saudação. Seu trabalho é fazer com que a criatura pareça estar sentada no planeta e dizendo a saudação. Nessa primeira etapa, use posicionamento absoluto para colocar a criatura em algum lugar em cima do planeta.
+    Nessa segunda etapa, também posicione a saudação em cima do planeta.
+    Agora, use uma propriedade z-index para garantir que a saudação sempre apareça em cima da criatura, e não atrás. -->
+    
+    <img id="planet" src="https://www.kasandbox.org/programming-images/space/planet.png" width="300">
+    
+    <div id="greeting">
+      <p>Hello! Welcome to position planet!</p>
+    </div>
+    
+    <img id="creature" src="https://www.kasandbox.org/programming-images/avatars/mr-pink.png">
+  </body>
+  </html>

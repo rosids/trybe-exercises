@@ -12,7 +12,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 1-3: _Unix & Bash - Part 1_
 - [x] 1-4: _Unix & Bash - Part 2_
-- [x] 1-5: _Shell Script_
 
 ##### Bloco 2: Git & GitHub
 
@@ -28,7 +27,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 3-4: _HTML Semântico_
 - [x] 3-5: _[Projeto - HTML & CSS](https://github.com/tryber/sd-08-project-lessons-learned/pull/35)_
 
-##### Bloco 4: Introdução - JavaScript e Lógica de Programação
+##### Bloco 4: Introdução - JavaScript & Lógica de Programação
 
 - [x] 4-1: _JavaScript - Primeiros passos_
 - [ ] 4-2: _JavaScript - Array e loop For_
@@ -36,7 +35,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 4-4: _JavaScript - Objetos e funções_
 - [ ] 4-5: _[Projeto - Playground Functions]()_
 
-##### Bloco 5: JavaScript: DOM, Eventos e Web Storage
+##### Bloco 5: JavaScript: DOM, Eventos & Web Storage
 
 - [ ] 5-1: _JavaScript - DOM e seletores_
 - [ ] 5-2: _JavaScript - Trabalhando com elementos_
@@ -48,7 +47,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
 - [ ] 5-7: _[Projeto - Carta Misteriosa]()_
 
-##### Bloco 6: HTML & CSS: Forms, Flexbox e Responsivo
+##### Bloco 6: HTML & CSS: Forms, Flexbox & Responsivo
 
 - [ ] 6-1: _HTML & CSS - Forms_
 - [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
@@ -99,7 +98,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 12-2: _Formulários no React_
 - [ ] 12-3: _[Projeto - Movie Cards Library Stateful]()_
 
-##### Bloco 13: React - Ciclo de Vida de Componentes e React Router
+##### Bloco 13: React - Ciclo de Vida de Componentes & React Router
 
 - [ ] 13-1: _Ciclo de vida de componentes em React_
 - [ ] 13-2: _React Router_
@@ -143,7 +142,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
-##### Bloco 20: Introdução - Introdução à SQL
+##### Bloco 20: Introdução à SQL
 
 - [ ] 20-1: _Banco de dados SQL_
 - [ ] 20-2: _Encontrando dados em um banco de dados_
@@ -151,14 +150,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 20-4: _Manipulando tabelas_
 - [ ] 20-5: _[Projeto - All For One]()_
 
-##### Bloco 21: Funções SQL, Joins e Subqueries
+##### Bloco 21: Funções SQL, Joins & Subqueries
 
 - [ ] 21-1: _Funções mais usadas no SQL_
 - [ ] 21-2: _Descomplicando JOINs e UNIONs_
 - [ ] 21-3: _Stored Routines & Subqueries_
 - [ ] 21-4: _[Projeto - Vocabulary Booster]()_
 
-##### Bloco 22: Normalização e Modelagem de Banco de Dados
+##### Bloco 22: Normalização & Modelagem de Banco de Dados
 
 - [ ] 22-1: _Transformando ideias em um modelo de banco de dados_
 - [ ] 22-2: _Normalização, Formas Normais e Dumps_
@@ -171,7 +170,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 23-2: _Filter Operators_
 - [ ] 23-3: _[Projeto - Data Flights]()_
 
-##### Bloco 24: MongoDB: Updates Simples e Complexos
+##### Bloco 24: MongoDB: Updates Simples & Complexos
 
 - [ ] 24-1: _Updates Simples_
 - [ ] 24-2: _Updates Complexos - Arrays - Parte 1_
@@ -194,13 +193,13 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 26-6: _Arquitetura de Software - Introdução ao MVC_
 - [ ] 26-7: _[Projeto - Cookmaster]()_
 
-##### Bloco 27: NodeJS: Camada de Serviço e Arquitetura Rest e Restful
+##### Bloco 27: NodeJS: Camada de Serviço & Arquitetura Rest e Restful
 
 - [ ] 27-1: _Arquitetura de Software - Camada de Serviço_
 - [ ] 27-2: _Arquitetura de web - Rest e Restful_
 - [ ] 27-3: _[Projeto - Store Manager]()_
 
-##### Bloco 28: NodeJS: Autenticação e Upload de Arquivos
+##### Bloco 28: NodeJS: Autenticação & Upload de Arquivos
 
 - [ ] 28-1: _NodeJS - JWT - (JSON Web Token)_
 - [ ] 28-2: _NodeJS - Upload de arquivos com Multer_
@@ -216,7 +215,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [ ] 30-1: _[Projeto - Trybeer]()_
 
-##### Bloco 31: Projeto
+##### Bloco 31: Arquitetura: SOLID & ORM
 
 - [ ] 31-1: _Arquitetura - Princípios SOLID_
 - [ ] 31-2: _ORM - Interface da aplicação com o banco de dados_
@@ -226,9 +225,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 32: Sockets
 
-- [ ] 30-1: _Sockets - TCP/UDP & NET_
-- [ ] 30-2: _Sockets - Socket.io_
-- [ ] 30-3: _[Projeto - Webchat]()_
+- [ ] 32-1: _Sockets - TCP/UDP & NET_
+- [ ] 32-2: _Sockets - Socket.io_
+- [ ] 32-3: _[Projeto - Webchat]()_
 
 ##### Bloco 33: Projeto Trybeer II
 
@@ -238,27 +237,27 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 34: Introdução - Ciência da Computação
 
-- [ ] 35-1: _Arquitetura de Computadores_
-- [ ] 35-2: _Arquitetura de redes_
-- [ ] 35-3: _Redes de computadores, ferramentas e segurança_
-- [ ] 35-4: _[Projeto - Explorando os protocolos]()_
+- [ ] 34-1: _Arquitetura de Computadores_
+- [ ] 34-2: _Arquitetura de redes_
+- [ ] 34-3: _Redes de computadores, ferramentas e segurança_
+- [ ] 34-4: _[Projeto - Explorando os protocolos]()_
 
-##### Bloco 35: Introdução à Python e Raspagem de Dados da Web
+##### Bloco 35: Introdução à Python & Raspagem de Dados da Web
 
 - [ ] 35-1: _Aprendendo Python_
 - [ ] 35-2: _Testes e Exceções_
 - [ ] 35-3: _Entrada e Saída de dados_
-- [ ] 36-4: _Raspagem de Dados_
+- [ ] 35-4: _Raspagem de Dados_
 - [ ] 35-5: _[Projeto - Tech news]()_
 
-##### Bloco 36: Programação Orientada a Objetos e Padrões de Projeto
+##### Bloco 36: Programação Orientada a Objetos & Padrões de Projeto
 
 - [ ] 36-1: _Introdução à programação orientada a objetos_
 - [ ] 36-2: _Programação orientada a objetos na prática_
 - [ ] 36-3: _Padrões de projeto_
 - [ ] 36-4: _[Projeto - Relatório de Estoque]()_
 
-##### Bloco 37: Algoritmos e Estrutura de Dados
+##### Bloco 37: Algoritmos & Estrutura de Dados
 
 - [ ] 37-1: _Estrutura de Dados I - Arrays_
 - [ ] 37-2: _Estrutura de Dados I - Complexidade de Algoritmos_
@@ -266,16 +265,16 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 37-4: _Algoritsmos de ordenação e busca_
 - [ ] 37-5: _[Projeto - Algoritmos]()_
 
-##### Bloco 38: Estrutura de Dados: Hash e Set
+##### Bloco 38: Estrutura de Dados: Hash & Set
 
 - [ ] 38-1: _Estrutura de Dados II - Hash maps & Dict_
 - [ ] 38-2: _Estrutura de Dados II - Set_
 - [ ] 38-3: _[Projeto - Restaurant Orders]()_
 
-##### Bloco 39: Estrutura de Dados: Pilhas, Filas e Listas
+##### Bloco 39: Estrutura de Dados: Pilhas, Filas & Listas
 
-- [ ] 37-1: _Estrutura de Dados III - Pilhas_
-- [ ] 37-2: _Estrutura de Dados III - Deque_
-- [ ] 37-3: _Estrutura de Dados III - Nó & Listas ligadas_
-- [ ] 37-4: _Estrutura de Dados III - Listas duplamente ligadas_
-- [ ] 37-5: _[Projeto - TING - Trybe Is Not Google]()_
+- [ ] 39-1: _Estrutura de Dados III - Pilhas_
+- [ ] 39-2: _Estrutura de Dados III - Deque_
+- [ ] 39-3: _Estrutura de Dados III - Nó & Listas ligadas_
+- [ ] 39-4: _Estrutura de Dados III - Listas duplamente ligadas_
+- [ ] 39-5: _[Projeto - TING - Trybe Is Not Google]()_

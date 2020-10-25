@@ -1,7 +1,7 @@
 let valorCusto = 10;
 let valorVenda = 50;
 let valorCustoTotal = (valorCusto * 0.2) + valorCusto;
-let lucro = valorVenda - valorCustoTotal;
+let lucro = (valorVenda - valorCustoTotal) * 1000;
 
 if (valorCusto < 0 ) {
   console.log("Valor de custo inválido!");

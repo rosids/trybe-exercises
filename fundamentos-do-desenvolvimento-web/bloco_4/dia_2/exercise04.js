@@ -11,5 +11,5 @@ let average = sum / numbers.length;
 if (average > 20) {
   console.log("Valor maior que 20");
 } else {
-  console.log("Valor menor do que vinte");
+  console.log("Valor menor ou igual vinte");
 }

@@ -51,8 +51,8 @@
 
 5. Make a pyramid with n base asterisks that is empty in the middle. Assume that the value of n will always be odd:
     ```
-    Por último, façamos com que a variável seja incrementada com o
-    valor correspondente a cada loop;
+    Finally, we will increase the variable with the value
+    corresponding to each loop;
 
       n = 7
 
@@ -63,6 +63,7 @@
     ```
 
 <br/>
+
 6. Make a program that says whether a number defined in a variable is prime or not.
-  - A prime number is a number that is only divisible by 1 and itself, that is, dividing it with any other numbers gives a remainder other than zero.
-  - Dica: você vai precisar de fazer um loop que vá de 0 ao número definido; Além disso, vai precisar de fazer uma checagem a cada iteração e armazenar os resultados em algum lugar.
+    - A prime number is a number that is only divisible by 1 and itself, that is, dividing it with any other numbers gives a remainder other than zero.
+    - Tip: you will need to loop from 0 to the defined number; In addition, you will need to check each iteration and store the results somewhere.

@@ -44,6 +44,16 @@
           let texto =document.getElementsByTagName('p');
           texto[1].innerHTML = 'Qualquer texto';
         }
+
+        changeText();
+
+        function changeColor(elementos, cor) {
+          document.getElementsByClassName(elementos)[0].style.backgroundColor = cor;
+        }
+        changeColor('main-content', "rgb(76,164,109)");
+        changeColor('center-content', 'white');
+
+        
         
     </script>
   </body>

@@ -58,7 +58,16 @@
           title.innerHTML = "Exercício 5.1 - JavaScript"
         }
         changeTitle();
-           
+
+        function capitalText() {
+          let p = document.getElementsByTagName('p');
+          for (let index = 0; index < p.length; index += 1) {
+            p[index].style.textTransform = 'uppercase';
+          }
+        }
+
+        capitalText();
+
     </script>
   </body>
 </html>

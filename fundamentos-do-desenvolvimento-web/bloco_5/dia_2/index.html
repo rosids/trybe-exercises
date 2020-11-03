@@ -91,6 +91,34 @@
       imageLeftContent.src = 'https://picsum.photos/200';
       imageLeftContent.className = 'small-image';
       leftContent.appendChild(imageLeftContent);
+            
+      let rightContent = document.querySelector('.right-content');
+      let ulRightContent = document.createElement('ul');
+      ulRightContent.className = 'unordered-list';
+      rightContent.appendChild(ulRightContent);
+      let unorderedList = document.querySelector('.unordered-list');
+
+      let numbers = [
+        'um',
+        'dois',
+        'três',
+        'quatro',
+        'cinco',
+        'seis',
+        'sete',
+        'oito',
+        'nove',
+        'dez'
+      ];
+
+      for (let index = 0; index < numbers.length; index += 1) {
+        let number = numbers[index];
+
+        let itemList = document.createElement('li');
+        itemList.innerText = number;
+
+        unorderedList.appendChild(itemList);
+      }
 
     </script>
   </body>

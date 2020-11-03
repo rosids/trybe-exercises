@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.1</title>
+
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Exercício 5.1 - JavaEscripito </h1>
+    <div class="main-content">
+      <div class="center-content">
+        <p>Texto padrão do nosso site</p>
+        <p>-----</p>
+        <p>Trybe</p>
+      </div>
+    </div>
+    <script>
+
+        function changeText() {
+          let texto =document.getElementsByTagName('p');
+          texto[1].innerHTML = 'Qualquer texto';
+        }
+
+        changeText();
+
+        function changeColor(elementos, cor) {
+          document.getElementsByClassName(elementos)[0].style.backgroundColor = cor;
+        }
+        changeColor('main-content', "rgb(76,164,109)");
+        changeColor('center-content', 'white');
+
+        function changeTitle() {
+          let title = document.getElementById('title');
+          title.innerHTML = "Exercício 5.1 - JavaScript"
+        }
+        changeTitle();
+
+        function capitalText() {
+          let p = document.getElementsByTagName('p');
+          for (let index = 0; index < p.length; index += 1) {
+            p[index].style.textTransform = 'uppercase';
+          }
+        }
+
+        capitalText();
+
+         function showP() {
+          let p = document.getElementsByTagName("p")
+          for(let index = 0; index < p.length; index += 1) {
+            console.log(p[index].innerText);
+          }
+        }
+        showP()
+
+    </script>
+  </body>
+</html>

@@ -41,7 +41,7 @@ function createDates(){
 createDates();
 
 // Exercise 2
-function addholidays (holiday) {
+function addHolidays (holiday) {
   const buttonsContainer = document.querySelector('.buttons-container')
   let button = document.createElement('button');
   button.id = 'btn-holiday';
@@ -49,7 +49,7 @@ function addholidays (holiday) {
   buttonsContainer.appendChild(button);
 }
 
-addholidays('Feriados');
+addHolidays('Feriados');
 
 // Exercise 3
 function changeColorHolidays () {
@@ -68,3 +68,14 @@ function changeColorHolidays () {
 }
 
 changeColorHolidays()
+
+// Exercise 4
+function addFriday (friday) {
+  const buttonsContainer = document.querySelector('.buttons-container')
+  let button = document.createElement('button');
+  button.id = 'btn-friday';
+  button.innerHTML = friday;
+  buttonsContainer.appendChild(button);
+}
+
+addFriday('Sexta-feira');

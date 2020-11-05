@@ -39,3 +39,14 @@ function createDates(){
 }
 
 createDates();
+
+// Exercise 2
+function addholidays (holiday) {
+  const buttonsContainer = document.querySelector('.buttons-container')
+  let button = document.createElement('button');
+  button.id = 'btn-holiday';
+  button.innerHTML = holiday;
+  buttonsContainer.appendChild(button);
+}
+
+addholidays('Feriados');

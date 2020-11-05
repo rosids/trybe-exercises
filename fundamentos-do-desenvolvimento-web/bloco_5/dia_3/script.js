@@ -50,3 +50,21 @@ function addholidays (holiday) {
 }
 
 addholidays('Feriados');
+
+// Exercise 3
+function changeColorHolidays () {
+  let holidays = document.querySelectorAll('.holiday');
+  const buttonHoliday = document.querySelector('#btn-holiday');
+  let color = 'rgb(118,248,35)';
+  for(let index = 0; index < holidays.length; index += 1) {
+    let holiday = holidays[index];
+    buttonHoliday.addEventListener('click', function() {
+      holiday.style.backgroundColor = color;
+    });
+    buttonHoliday.addEventListener('dblclick', function() {
+      holiday.style.backgroundColor = 'initial';
+    })
+  }
+}
+
+changeColorHolidays()

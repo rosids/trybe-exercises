@@ -120,3 +120,13 @@ function taskList (task) {
 }
 
 taskList('Cozinhar');
+
+function colorTaskList (color) {
+  const myTasks = document.querySelector('.my-tasks');
+  const legend = document.createElement('div');
+  legend.className = 'task'
+  legend.style.backgroundColor = color;
+  myTasks.appendChild(legend);
+}
+
+colorTaskList('orange');

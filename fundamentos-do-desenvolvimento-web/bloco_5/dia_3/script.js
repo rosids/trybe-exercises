@@ -79,3 +79,21 @@ function addFriday (friday) {
 }
 
 addFriday('Sexta-feira');
+
+// Exercise 5
+function changeTextFriday () {
+  let fridays = document.getElementsByClassName('friday');
+  const buttonFriday = document.querySelector('#btn-friday');
+  for(let index = 0; index < fridays.length; index += 1) {
+    let friday = fridays[index];
+    buttonFriday.addEventListener('click', function() {
+      if (friday.innerText === "Sextou!") {
+        friday.innerText = (Number(friday.previousElementSibling.innerText) + 1);
+      } else {
+        friday.innerHTML = 'Sextou!';
+      }
+    });
+  }
+}
+
+changeTextFriday()

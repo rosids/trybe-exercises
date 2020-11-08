@@ -91,7 +91,7 @@ function changeTextFriday () {
 changeTextFriday();
 
 function zoom () {
-  days = document.querySelector('#days');
+  const days = document.querySelector('#days');
 
   days.addEventListener('mouseover', (event) => {
     event.target.style.fontSize = '30px';
@@ -102,7 +102,7 @@ function zoom () {
 zoom();
 
 function zoomOut() {
-  days = document.querySelector('#days');
+  const days = document.querySelector('#days');
 
   days.addEventListener('mouseout', (event) =>{
     event.target.style.fontSize = '18px';
@@ -144,3 +144,22 @@ function selectTask () {
 }
 
 selectTask();
+
+function dayColorOfSelectedTask() {
+  const days = document.querySelector('#days');
+  const color = 'rgb(119,119,119)';
+  
+  days.addEventListener('click', (event) => {
+    const taskSelected = document.querySelector('.selected');
+    if(taskSelected != null) {
+      if (event.target.style.color === taskSelected.style.backgroundColor) {
+        event.target.style.color = color;
+      } else {
+        event.target.style.color = taskSelected.style.backgroundColor;
+      }
+    }
+  })
+
+}
+
+dayColorOfSelectedTask();

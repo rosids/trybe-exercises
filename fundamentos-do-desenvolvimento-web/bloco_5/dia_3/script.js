@@ -41,15 +41,15 @@ function createDates(){
 createDates();
 
 // Exercise 2
-function addHolidays (holiday) {
+function addButton (id, name) {
   const buttonsContainer = document.querySelector('.buttons-container')
   let button = document.createElement('button');
-  button.id = 'btn-holiday';
-  button.innerHTML = holiday;
+  button.id = id;
+  button.innerHTML = name;
   buttonsContainer.appendChild(button);
 }
 
-addHolidays('Feriados');
+addButton('btn-holiday','Feriados');
 
 // Exercise 3
 function changeColorHolidays () {
@@ -70,15 +70,7 @@ function changeColorHolidays () {
 changeColorHolidays()
 
 // Exercise 4
-function addFriday (friday) {
-  const buttonsContainer = document.querySelector('.buttons-container')
-  let button = document.createElement('button');
-  button.id = 'btn-friday';
-  button.innerHTML = friday;
-  buttonsContainer.appendChild(button);
-}
-
-addFriday('Sexta-feira');
+addButton('btn-friday','Sexta-feira');
 
 // Exercise 5
 function changeTextFriday () {

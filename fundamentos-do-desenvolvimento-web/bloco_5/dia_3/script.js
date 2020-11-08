@@ -130,3 +130,17 @@ function colorTaskList (color) {
 }
 
 colorTaskList('orange');
+
+function selectTask () {
+  const task = document.querySelector('.task');
+
+  task.addEventListener('click', (event) => {
+    if(task.className === 'task' ) {
+      event.target.className = 'task selected';
+    } else {
+      event.target.className = 'task';
+    }
+  });
+}
+
+selectTask();

@@ -90,6 +90,7 @@ function changeTextFriday () {
 
 changeTextFriday();
 
+// Exercise 6
 function zoom () {
   const days = document.querySelector('#days');
 
@@ -112,6 +113,7 @@ function zoomOut() {
 
 zoomOut();
 
+// Exercise 7
 function taskList (task) {
   const myTasks = document.querySelector('.my-tasks');
   let createTask = document.createElement('span');
@@ -121,6 +123,7 @@ function taskList (task) {
 
 taskList('Cozinhar');
 
+// Exercise 8
 function colorTaskList (color) {
   const myTasks = document.querySelector('.my-tasks');
   const legend = document.createElement('div');
@@ -131,6 +134,7 @@ function colorTaskList (color) {
 
 colorTaskList('orange');
 
+// Exercise 9
 function selectTask () {
   const task = document.querySelector('.task');
 
@@ -145,6 +149,7 @@ function selectTask () {
 
 selectTask();
 
+// Exercise 10
 function dayColorOfSelectedTask() {
   const days = document.querySelector('#days');
   const color = 'rgb(119,119,119)';

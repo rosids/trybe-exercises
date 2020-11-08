@@ -67,7 +67,7 @@ function changeColorHolidays () {
   }
 }
 
-changeColorHolidays()
+changeColorHolidays();
 
 // Exercise 4
 addButton('btn-friday','Sexta-feira');
@@ -88,4 +88,26 @@ function changeTextFriday () {
   }
 }
 
-changeTextFriday()
+changeTextFriday();
+
+function zoom () {
+  days = document.querySelector('#days');
+
+  days.addEventListener('mouseover', (event) => {
+    event.target.style.fontSize = '30px';
+    event.target.style.fontWeight = 'bold';
+  });
+}
+
+zoom();
+
+function zoomOut() {
+  days = document.querySelector('#days');
+
+  days.addEventListener('mouseout', (event) =>{
+    event.target.style.fontSize = '18px';
+    event.target.style.fontWeight = 'normal';
+  }); 
+}
+
+zoomOut();

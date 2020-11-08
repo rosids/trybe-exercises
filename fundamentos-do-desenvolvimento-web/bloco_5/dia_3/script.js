@@ -111,3 +111,12 @@ function zoomOut() {
 }
 
 zoomOut();
+
+function taskList (task) {
+  const myTasks = document.querySelector('.my-tasks');
+  let createTask = document.createElement('span');
+  createTask.innerHTML = task;
+  myTasks.appendChild(createTask);
+}
+
+taskList('Cozinhar');

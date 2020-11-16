@@ -1,0 +1,174 @@
+/* Site 1 */
+
+/* Exercicio 1 */
+#pond {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Exercicio 2 */
+#pond {
+  display: flex;
+  justify-content: center;
+}
+
+/* Exercicio 3 */
+#pond {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Exercicio 4 */
+#pond {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Exercicio 5 */
+#pond {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Exercicio 6 */
+#pond {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Exercício 7 */
+#pond {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+/* Exercício 8 */
+#pond {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* Exercício 9 */
+#pond {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Exercício 10 */
+#pond {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content:flex-end; 
+}
+
+/* Exercício 11 */
+#pond {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Exercício 12 */
+#pond {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+/* Exercício 13 */
+#pond {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+align-items: flex-end;
+}
+
+/* Exercício 14 */
+#pond {
+  display: flex;
+}
+
+.yellow {
+  order: 1;
+}
+
+/* Exercício 15 */
+#pond {
+  display: flex;
+}
+
+.red {
+  order: -3;
+}
+
+/* Exercício 16 */
+#pond {
+  display: flex;
+  align-items: flex-start;
+}
+
+.yellow {
+  align-self: flex-end;
+}
+
+/* Exercício 17 */
+#pond {
+  display: flex;
+  align-items: flex-start;
+}
+
+.yellow {
+  order: 2;
+  align-self: flex-end;
+}
+
+/* Exercício 18 */
+#pond {
+  display: flex;
+  flex-wrap: wrap
+}
+
+/* Exercício 19 */
+#pond {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* Exercício 20 */
+#pond {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* Exercício 21 */
+#pond {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+/* Exercício 22 */
+#pond {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+/* Exercício 23 */
+#pond {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-content: center;
+}
+
+/* Exercício 24 */
+#pond {
+  display: flex;
+  flex-flow: column-reverse wrap-reverse;
+  justify-content: center;
+  align-content: space-between;
+}

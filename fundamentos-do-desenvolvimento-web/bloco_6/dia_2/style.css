@@ -1,0 +1,39 @@
+body {
+  width: 100%;
+}
+
+.container {
+  margin: 50px;
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+.title {
+  margin-bottom: 50px;
+}
+
+.fieldset {
+  border: 1px solid hsl(0, 0%, 86%);
+  margin: 20px auto 30px;
+  padding: 30px 25px;
+}
+
+.fieldset legend {
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+.housing-type {
+  padding: 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  width: 49%;
+}

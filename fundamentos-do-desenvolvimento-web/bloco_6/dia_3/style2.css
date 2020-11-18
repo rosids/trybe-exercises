@@ -1,0 +1,108 @@
+/* Site 2 */
+
+/* Exercício 1 */
+.tower-group-1 {
+  display: flex;
+  justify-content: center;
+}
+
+/* Exercício 2 */
+.tower-group-1 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.tower-group-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.tower-group-3 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Exercício 3 */
+.tower-group-1 {
+  display: flex;
+  justify-content: center;
+}
+
+.tower-group-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Exercício 4 */
+.tower-group-1 {
+  display: flex;
+  align-items: flex-end;
+}
+
+.tower-group-2 {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Exercício 5 */
+.tower-group-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.tower-group-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.tower-group-3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Exercício 6 */
+.tower-group-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Exercício 7 */
+.tower-group-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.tower-group-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Exercício 8 */
+.tower-group-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.tower-group-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Exercício 9 */
+.tower-group-1 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+
+.tower-group-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items:center;
+}

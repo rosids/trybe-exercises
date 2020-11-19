@@ -1,0 +1,85 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    background-color: cadetblue;
+  }
+
+  .container {
+    color: white;
+  }
+
+  header {
+    padding: 10px;
+    background-color:darkcyan;
+  }
+
+  header p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  header ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+  }
+
+  .aside-one, .aside-two {
+    padding: 15px;
+    margin: 10px auto;
+  }
+
+  .aside-one h2, .aside-two h2 {
+    text-align: center;
+  }
+
+  .aside-one ul, .aside-two ul {
+    list-style-type: square;
+  }
+
+  .aside-two ul li {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .main-content {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .main-content h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .main-content p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  footer {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  footer h3 {
+    align-self: center;
+  }
+
+  footer p {
+    text-align: justify;
+  }
+
+}

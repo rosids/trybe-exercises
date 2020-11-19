@@ -30,7 +30,7 @@ html {
 
   header ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 25px;
   }
 
@@ -47,7 +47,7 @@ html {
     list-style-type: square;
   }
 
-  .aside-two ul li {
+  .aside-one ul li, .aside-two ul li {
     font-size: 16px;
     line-height: 28px;
   }
@@ -82,4 +82,54 @@ html {
     text-align: justify;
   }
 
+}
+
+@media screen and (min-width: 760px) {
+
+  header p {
+    font-size: 25px;
+  }
+
+  header ul li {
+    font-size: 22px;
+  }
+
+  .aside-one h2, .aside-two h2 {
+    font-size: 33px;
+  }
+  
+  .aside-one ul li, .aside-two ul li {
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  .main-content {
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .main-content h1 {
+    font-size: 34px;
+  }
+
+  .main-content p {
+    font-size: 22px;
+    line-height: 30px;
+    text-align: justify;
+  }
+
+  footer {
+    margin: 15px auto;
+    padding: 25px;
+  }
+  
+  footer h3 {
+    font-size: 30px;
+  }
+  
+  footer p {
+    font-size: 22px;
+    line-height: 28px;
+    text-align: justify;
+  }
 }

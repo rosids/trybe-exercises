@@ -68,10 +68,11 @@ html {
   }
 
   footer {
-    margin: 20px;
+    background-color:darkcyan;
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    margin: auto;
+    padding: 25px;
   }
 
   footer h3 {
@@ -119,7 +120,7 @@ html {
   }
 
   footer {
-    margin: 15px auto;
+    margin: auto;
     padding: 25px;
   }
   
@@ -131,5 +132,49 @@ html {
     font-size: 22px;
     line-height: 28px;
     text-align: justify;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  header p {
+    font-size: 32px;
+  }
+
+  header ul li {
+    font-size: 25px;
+  }
+
+  .aside-one, .aside-two, .main-content {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .aside-one h2, .aside-two h2 {
+    font-size: 35px;
+  }
+
+  .aside-one ul li, .aside-two ul li {
+    font-size: 27px;
+    line-height: 33px;
+  }
+
+  .main-content h1 {
+    font-size: 36px;
+  }
+
+  .main-content p {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  footer {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  
+  footer p {
+    font-size: 24px;
+    line-height: 30px;
+    padding: 0 20px;
   }
 }

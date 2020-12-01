@@ -88,7 +88,14 @@ const expected_result = [
 ]
 
 function oldBooks() {
-  // escreva seu código aqui
+  const year = new Date().getFullYear() - 60;
+  const book = books.filter(book => (
+    (book.releaseYear < year)
+  ));
+  return book.sort((book1, book2) => book1.releaseYear - book2.releaseYear);
 }
+
+// obter ano atual
+// https://professor-falken.com/pt/preguntas/6010/obtener-el-ano-actual-en-javascript/
 
 assert.deepEqual(oldBooks(), expected_result);

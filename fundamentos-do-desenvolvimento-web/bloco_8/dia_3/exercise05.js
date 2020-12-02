@@ -6,10 +6,12 @@ const names = [
   'Abeladerco', 'Adieidy',  'Alarucha',
 ];
 
-
+const separator = (acc, curr) => acc.concat(curr.split(''));
+const sumA = (acc, letter) => (letter === 'A' || letter === 'a') ? acc + 1 : acc;
 
 function containsA() {
-  // escreva seu código aqui
+  const name = names.reduce(separator, []);
+  return name.reduce(sumA, 0);
 }
 
 assert.deepEqual(containsA(), 20);

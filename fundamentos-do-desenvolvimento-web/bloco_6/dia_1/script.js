@@ -1,101 +1,85 @@
-const states = {
-  'AC': 'Acre',
-  'AL': 'Alagoas',
-  'AP': 'Amapá',
-  'AM': 'Amazonas',
-  'BA': 'Bahia',
-  'CE': 'Ceará',
-  'DF': 'Distrito Federal',
-  'ES': 'Espírito Santo',
-  'GO': 'Goiás',
-  'MA': 'Maranhão',
-  'MT': 'Mato Grosso',
-  'MS': 'Mato Grosso do Sul',
-  'MG': 'Minas Gerais',
-  'PA': 'Pará',
-  'PB': 'Paraíba',
-  'PR': 'Paraná',
-  'PE': 'Pernambuco',
-  'PI': 'Piauí',
-  'RJ': 'Rio de Janeiro',
-  'RN': 'Rio Grande do Norte',
-  'RS': 'Rio Grande do Sul',
-  'RO': 'Rondônia',
-  'RR': 'Roraima',
-  'SC': 'Santa Catarina',
-  'SP': 'São Paulo',
-  'SE': 'Sergipe',
-  'TO': 'Tocantins'
-};
-
-const stateList = document.querySelector('#state');
-
-function insertStates() {
-  for (let state in states) {
-    const itemState = document.createElement('option');
-    itemState.value = state;
-    itemState.innerHTML = states[state];
-    stateList.appendChild(itemState);
+const states = document.getElementById('state');
+function createStateOptions() {
+  const stateOptions = ['Selecione seu estado', 'AC', 'AL', 'AM', 'AP', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MG', 'MS', 'MT', 'PA', 'PB', 'PE', 'PI', 'PR', 'RJ', 'RN', 'RO', 'RR', 'RS', 'SC', 'SE', 'SP', 'TO'];
+  let value = 1;
+  for (let index = 0; index < stateOptions.length; index += 1) {
+    const createOptions = document.createElement('option');
+    states.appendChild(createOptions).innerText = stateOptions[index];
+    states.appendChild(createOptions).value = stateOptions[index];
   }
 }
 
-insertStates();
-
-function dateValidation() {
-  const inputDate = document.querySelector('#date');
-  const date = inputDate.value;
-  const arrayDate = date.split('/');
-  const day = parseInt(arrayDate[0]);
-  const month = parseInt(arrayDate[1]);
-  const year = parseInt(arrayDate[2]);
-
-  if (!(day > 0 && day <= 31 && month > 0 && month <= 12 && year > 0)) {
-    inputDate.classList.add('error');
-    return 'Erro na validação da data \n';
-  }
-  return '';
-
-}
-
-const inputText = document.querySelectorAll('input[type=text], input[type=email], select, textarea');
-
-function fieldValidation() {
-  let erro = dateValidation();
-  let erros = '';
-
-  if (erro != '') {
-    erros += `${erro} \n`;
-  }
-
-  for(let index = 0; index < inputText.length; index += 1) {
-    const input = inputText[index];
-    if(input.required) {
-      if(input.value === '') {
-        input.classList.add('error');
-        erros += `O campo ${input.name} é obrigatório \n`;
-      }
-      if (input.minlength && input.minlength.length < input.minlength) {
-        input.classList.add('error');
-        erros += `O campo ${input.id} deve possuir no mínimo ${input.length} caracteres \n`;
-      }
+function validateData(data) {
+  if (data.indexOf('/') === 2 || data.indexOf('/') === 5) {
+    const day = data.substr(0, 2);
+    const month = data.substr(3, 2);
+    const year = data.substr(6, 4);
+    if ((day > 0 && day < 31) && (month > 0 && month <= 12) && (year > 0 && year.length === 4)) {
+      return true;
     }
   }
-
-  if(erros != '') {
-    alert(erros);
-  } else {
-    const form = document.querySelector('form')
-    form.reset();
-    for(let index = 0; index < inputText.length; index += 1) {
-      inputText[index].classList.remove('error');
-    }
-  }
+  return false;
 }
 
-const buttonSubmit = document.querySelector('#submit');
+function checkData() {
+  const inputData = document.querySelector('.input-data');
+  let data = inputData.value;
+  const userData = validateData(data);
+  if (!userData && data.length) {
+    inputData.value = '';
+    alert('data invalida');
+    return false;
+  }
+  return userData;
+}
 
-buttonSubmit.addEventListener('click', (event) => {
+function checkEmail() {
+  const email = document.querySelector('.email-input');
+  let insertedEmail = email.value;
+  const emailFormat = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+$/.test(insertedEmail);
+  if (!emailFormat && insertedEmail.length) {
+    email.value = '';
+    alert('email inválido');
+    return false;
+  }
+  return emailFormat
+}
+
+function renderCurriculum(event) {
   event.preventDefault();
-  fieldValidation();
-  
-});
+  const formElements = document.querySelectorAll('input');
+  for (let index = 0; index < formElements.length; index += 1) {
+    if (formElements[index].type === 'radio' && !formElements[index].checked) {
+      continue;
+    }
+    const userInput = formElements[index].value;
+    const dataUser = document.querySelector('.form-data');
+    if (checkEmail() && checkData()) {
+      const div = document.createElement('div');
+      div.className = 'div-curriculum';
+      div.innerHTML = userInput;
+      dataUser.appendChild(div);
+    }
+  }
+}
+
+const clearButton = document.querySelector('.clear-button');
+function clearFields() {
+  const formElements = document.querySelectorAll('input');
+  const textArea = document.querySelector('textarea')
+  const div = document.querySelectorAll('.div-curriculum');
+  for (let index = 0; index < formElements.length && index < div.length; index += 1) {
+    const userInput = formElements[index];
+    userInput.value = '';
+    textArea.value = '';
+    div[index].innerText = '';
+  }
+}
+
+const submitButton = document.querySelector('.submit-button');
+submitButton.addEventListener('click', renderCurriculum);
+clearButton.addEventListener('click', clearFields);
+
+window.onload = function () {
+  createStateOptions();
+}

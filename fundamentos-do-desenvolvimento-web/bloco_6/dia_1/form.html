@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Formulário de Currículo</title>
+
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+  <main class="container">
+    <form class="form" novalidate>
+
+      <fieldset class="personal-data">
+        <legend>Dados Pessoais</legend>
+        
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" maxlength="50" required>
+
+        <label for="cpf">CPF</label>
+        <input type="text" name="cpf" id="cpf" maxlength="11" required>
+        
+        <label for="address">
+          Endereço
+        </label>
+        <input type="text" id="address" name="address" maxlength="200" required>
+        
+        <fieldset>
+          <legend>Moradia</legend>
+          <input type="radio" name="housing-type" id="home" checked>
+          Casa
+          <input type="radio" name="housing-type" id="apartment">
+          Apartamento
+        </fieldset>
+
+        <label for="city">
+          Cidade
+          <input type="text" name="city" id="city" required>
+        </label>
+
+        <label for="state">
+          Estado
+          <select name="state" id="state" required>
+            <option value="">Selecione um Estado</option>
+          </select>
+        </label>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Último emprego</legend>
+
+        <label for="resume">Resumo do Currículo</label>
+        <textarea name="resume" id="resume" cols="30" rows="10" maxlength="1000" required placeholder="Faça um resumo do seu curriculo"></textarea>
+
+        <label for="occupation" maxlength="40" required>Cargo
+          <input type="text" name="occupation" id="description-occupation" maxlength="500" required>
+        </label>
+
+        <label for="description-occupation">
+          <textarea name="description-occupation" id="description-occupation" maxlength="500" required cols="30" rows="10"></textarea>
+        </label>
+
+        <label for="date">Data de Início</label>
+        <input type="text" name="date" id="date" minlength="10" maxlength="10" required>
+      </fieldset>
+
+      <button type="submit" id="submit">Enviar</button>
+      <button type="reset">Limpar</button>
+
+    </form>
+
+    <section class="form-data"></section>
+
+  </main>
+  
+    <script src="script2.js"></script>
+</body>
+
+</html>

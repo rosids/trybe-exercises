@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+main {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+fieldset {
+  padding: 10px;
+}
+
+fieldset + fieldset {
+  margin: 20px;
+}
+
+legend {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin: 5px;
+}
+
+label + input {
+  margin: 10px;
+}
+
+input[type='text'],
+input[type='email'] {
+  border-radius: 2px;
+  width: 90%;
+  padding: 3px;
+  margin: 10px;
+}
+
+input + input {
+  margin-bottom: 15px;
+}
+
+textarea {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.error {
+  border: 1px solid red;
+}

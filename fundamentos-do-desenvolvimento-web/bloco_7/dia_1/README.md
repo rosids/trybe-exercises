@@ -34,20 +34,20 @@
       ~~~
 ## Parte 2
 Abaixo, você verá algumas especificações de algoritmos para desenvolver. É fundamental que você utilize o que aprendeu sobre _let, const, arrow functions e template literals_.
-1. Crie uma função que receba um número e retorne seu fatorial.
+3. Crie uma função que receba um número e retorne seu fatorial.
     * Na matemática, o fatorial de um número não negativo N, com a notação N!, é o produto de todos os inteiros menores ou iguais a N. Exemplo: 4! = 4 * 3 * 2 * 1 = 24.
     * **Bônus (opcional):** tente fazer o mesmo exercício de [forma recursiva](http://devfuria.com.br/logica-de-programacao/recursividade-fatorial/). **Spoiler:** É possível resolver com uma linha.
-2. Crie uma função que receba uma frase e retorne qual a maior palavra.
+4. Crie uma função que receba uma frase e retorne qual a maior palavra.
     * Exemplo:
       ~~~js
         longestWord("Antônio foi no banheiro e não sabemos o que aconteceu") // retorna 'aconteceu'
       ~~~
-3. Crie uma página que contenha:
+5. Crie uma página que contenha:
     * Um botão ao qual será associado um event listener;
     * Uma variável _clickCount_ no arquivo _**JavaScript**_ que acumule o número de clicks no botão;
     * Um campo no HTML que vá atualizando a quantidade de clicks no botão conforme a variável clickCount é atualizada.
     * Um campo no **_HTML_** que vá atualizando a quantidade de clicks no botão conforme a variável clickCount é atualizada.
-4. Crie um código JavaScript com a seguinte especificação:
+6. Crie um código JavaScript com a seguinte especificação:
 **Não se esqueça de usar template literals**
     * Função 1: Escreva uma função que vai receber uma string como parâmetro. Sua função deverá procurar pela letra x em uma string qualquer que você determinar e substituir pela string que você passou como parâmetro. Sua função deve retornar essa nova string.
         * Exemplo:

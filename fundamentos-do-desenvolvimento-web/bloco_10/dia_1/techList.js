@@ -8,6 +8,4 @@ function techList(tech, name) {
   }));
 }
 
-console.log(techList(["React", "Jest", "HTML", "CSS", "JavaScript"], "Lucas"))
-
 module.exports = techList;

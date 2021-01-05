@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "jest"
+    "test": "jest  --watch --verbose"
   },
   
   "devDependencies": {

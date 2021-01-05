@@ -1,0 +1,10 @@
+const fetch = require('node-fetch');
+const getUserName = require('./users');
+
+const getRepos = (url) => {
+  return fetch(url)
+  .then(response => response.json())
+  .then((data) => {
+    return data.map((repo) => repo.name);
+  });
+}

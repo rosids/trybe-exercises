@@ -1,0 +1,1 @@
+const getListAnimals = require('./animals');

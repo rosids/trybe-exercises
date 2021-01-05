@@ -15,7 +15,4 @@ describe('test async/await - getUserName', () => {
       await expect(getUserName(id)).rejects.toEqual({ error: `User with ${id} not found.` })
     });
   });
-});     
-
-//   describe(`When the user ID doesn't exist`, () => {
-//     it('returns an error', 
+}); 

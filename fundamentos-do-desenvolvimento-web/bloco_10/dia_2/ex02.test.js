@@ -9,7 +9,7 @@ describe('test promise - findUserById', () => {
   });
 
   describe(`When the user ID doesn't exist`, () => {
-    it('should return the username', () => {
+    it('returns an error', () => {
       expect.assertions(1);
       const id = 6;
       return expect(getUserName(id)).rejects.toEqual({ error: `User with ${id} not found.` });

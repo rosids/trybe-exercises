@@ -1,10 +1,18 @@
-const fetch = require('node-fetch');
 const getUserName = require('./users');
 
-const getRepos = (url) => {
-  return fetch(url)
-  .then(response => response.json())
-  .then((data) => {
-    return data.map((repo) => repo.name);
+describe('test promise - findUserById', () => {
+  describe('When the user ID exists', () => {
+    it('should return the username', () => {
+      expect.assertions(1);
+      return expect(getUserName(5)).resolves.toEqual('Paul');
+    });
   });
-}
+
+  describe(`When the user ID doesn't exist`, () => {
+    it('should return the username', () => {
+      expect.assertions(1);
+      const id = 6;
+      return expect(getUserName(id)).rejects.toEqual({ error: `User with ${id} not found.` });
+    });
+  });
+});

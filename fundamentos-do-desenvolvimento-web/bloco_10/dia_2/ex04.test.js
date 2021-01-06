@@ -10,8 +10,8 @@ const getRepos = (url) => {
 
 describe('Request user repository in the GitHub API', () => {
   it('Checks if user has the repository', async () => {
-    const data = await getRepos('https://api.github.com/users/tryber/repos');
-    expect(data).toContain('exercise-sequelize-associations');
-    expect(data).toContain('Curso-Trybe');
+    const data = await getRepos('https://api.github.com/orgs/tryber/repos');
+    expect(data).toContain('sd-01-week4-5-project-todo-list');
+    expect(data).toContain('sd-01-week4-5-project-meme-generator');
   });
 });

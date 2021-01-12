@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+
+const task = (value) => {
+  return (
+    <li>{value}</li>
+  );
+}
+
+const tasks = ['Tomar café', 'Escovar os dentes', 'Estudar', 'Dormir'];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ul>{task('Acordar')}</ul>
+      <ul>{tasks.map(task => <li>{ task }</li>)}</ul>
     </div>
-  );
+  )
 }
 
 export default App;

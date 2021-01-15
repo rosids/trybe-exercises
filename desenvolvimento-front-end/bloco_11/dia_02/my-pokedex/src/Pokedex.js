@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+
+import Pokemon from './Pokemon';
+
+import './Pokedex.css';
 
 class Pokedex extends Component {
   render() {
     return (
-      <div>
-        
-      </div>
+      <section className='pokedex'>
+        {this.props.pokemons.map(pokemon => <Pokemon key={pokemon.id} pokemon={pokemon} />)}
+      </section>
     );
   }
 }
-
-Pokedex.propTypes = {
-
-};
 
 export default Pokedex;

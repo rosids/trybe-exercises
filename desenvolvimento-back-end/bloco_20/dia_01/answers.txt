@@ -1,0 +1,20 @@
+- Exercício 1
+R: Clica com o botão direito na tabela depois é só clicar em "select rows - limit 1000".
+
+- Exercício 2
+R: Clica com o botão direito em Tables e após isso é só clicar em Create Table.
+
+- Exercício 4
+R: Faz referência a tabela country.
+
+- Exercício 5
+R: N:1
+
+- Exercício 6
+R: 1:N
+
+- Exercício 7
+R: customer -> store N:1;
+store -> customer 1:N;
+address -> city N:1;
+city -> address 1:N;

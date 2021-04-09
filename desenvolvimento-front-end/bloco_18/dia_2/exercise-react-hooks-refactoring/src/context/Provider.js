@@ -22,7 +22,6 @@ function Provider({ children }) {
 
   const changeSignal = (signalColor) => {
     setSignal({
-      ...signal,
       color: signalColor,
     });
   };

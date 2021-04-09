@@ -1,5 +1,3 @@
-// src/context/Provider.js
-
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import CarsContext from './CarsContext';
@@ -11,16 +9,28 @@ function Provider({ children }) {
     yellow: false,
   });
 
-  const moveCard = (car, side) => {
+  const [signal, setSignal] = useState({
+    color: 'red',
+  });
+
+  const moveCar = (car, side) => {
     setCars({
       ...cars,
       [car]: side,
     });
   };
 
+  const changeSignal = (signalColor) => {
+    setSignal({
+      color: signalColor,
+    });
+  };
+
   const contextValue = {
     cars,
-    moveCard,
+    signal,
+    moveCar,
+    changeSignal,
   };
 
   return (

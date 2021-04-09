@@ -11,6 +11,11 @@
   width: 100px;
 }
 
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
 .button-container {
   display: flex;
   justify-content: space-around;

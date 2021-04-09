@@ -13,7 +13,7 @@ function Provider({ children }) {
     color: 'red',
   });
 
-  const moveCard = (car, side) => {
+  const moveCar = (car, side) => {
     setCars({
       ...cars,
       [car]: side,
@@ -30,7 +30,7 @@ function Provider({ children }) {
   const contextValue = {
     cars,
     signal,
-    moveCard,
+    moveCar,
     changeSignal,
   };
 

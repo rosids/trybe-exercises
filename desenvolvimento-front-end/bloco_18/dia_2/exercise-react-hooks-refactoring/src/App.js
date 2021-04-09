@@ -1,10 +1,14 @@
 import React from 'react';
-import './App.css';
 import Cars from './Cars';
+import TrafficSignal from './TrafficSignal';
+import './App.css';
 
 function App() {
   return (
-    <Cars />
+    <div className="container">
+      <Cars />
+      <TrafficSignal />
+    </div>
   );
 }
 

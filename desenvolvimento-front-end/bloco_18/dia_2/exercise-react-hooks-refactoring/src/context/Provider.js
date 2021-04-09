@@ -1,5 +1,3 @@
-// src/context/Provider.js
-
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import CarsContext from './CarsContext';

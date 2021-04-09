@@ -1,5 +1,3 @@
-// src/Cars.jsx
-
 import React, { Component } from 'react';
 import CarsContext from './context/CarsContext';
 import carBlue from './images/carBlue.jpeg';

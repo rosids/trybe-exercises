@@ -162,14 +162,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 22-1: _Transformando ideias em um modelo de banco de dados_
 - [x] 22-2: _Normalização, Formas Normais e Dumps_
-- [x] 22-2: _Transformando ideias em um modelo de banco de dados - Parte 2_
-- [ ] 22-3: _[Projeto - One For All]()_
+- [x] 22-3: _Transformando ideias em um modelo de banco de dados - Parte 2_
+- [x] 22-3: _[Projeto - One For All](https://github.com/tryber/sd-08-mysql-one-for-all/pull/49)_
 
 ##### Bloco 23: Introdução ao MongoDB
 
 - [x] 23-1: _MongoDB - Introdução_
-- [ ] 23-2: _Filter Operators_
-- [ ] 23-3: _[Projeto - Data Flights]()_
+- [x] 23-2: _Filter Operators_
+- [x] 23-3: _[Projeto - Data Flights](https://github.com/tryber/sd-08-mongodb-dataflights/pull/34)_
 
 ##### Bloco 24: MongoDB: Updates Simples & Complexos
 

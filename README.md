@@ -169,7 +169,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 23-1: _MongoDB - Introdução_
 - [x] 23-2: _Filter Operators_
-- [ ] 23-3: _[Projeto - Data Flights]()_
+- [x] 23-3: _[Projeto - Data Flights](https://github.com/tryber/sd-08-mongodb-dataflights/pull/34)_
 
 ##### Bloco 24: MongoDB: Updates Simples & Complexos
 

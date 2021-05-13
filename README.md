@@ -174,7 +174,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 24: MongoDB: Updates Simples & Complexos
 
 - [x] 24-1: _Updates Simples_
-- [ ] 24-2: _Updates Complexos - Arrays - Parte 1_
+- [x] 24-2: _Updates Complexos - Arrays - Parte 1_
 - [ ] 24-3: _Updates Complexos - Arrays - Parte 2_
 - [x] 24-4: _[Projeto - Commerce](https://github.com/tryber/sd-08-mongodb-commerce/pull/51)_
 

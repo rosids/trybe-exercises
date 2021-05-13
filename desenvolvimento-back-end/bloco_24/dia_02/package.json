@@ -1,0 +1,17 @@
+{
+  "name": "dia_01",
+  "version": "1.0.0",
+  "description": "Exercícios TRYBE do bloco 25, dia 1",
+  "main": "exercise1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint-config-trybe-backend": "^1.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0"
+  }
+}

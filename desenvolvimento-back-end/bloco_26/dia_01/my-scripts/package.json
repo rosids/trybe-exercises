@@ -1,0 +1,18 @@
+{
+  "name": "my-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "imc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rosiele David",
+  "license": "ISC",
+  "dependencies": {
+    "eslint-config-trybe-backend": "^1.0.3",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0"
+  }
+}

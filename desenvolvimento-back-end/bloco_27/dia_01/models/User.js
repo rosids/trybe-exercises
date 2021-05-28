@@ -26,7 +26,13 @@ const addUser = async (newUser) => {
   return serialize(newUser);
 }
 
+const getUsers = async () => {
+  const conn = await connection();
+  return await conn.collection('users').find().toArray();
+}
+
 module.exports = {
   addUser,
   isValid,
+  getUsers,
 }

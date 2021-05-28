@@ -17,4 +17,9 @@ route.post('/', async (req, res) => {
   res.json(newUser);
 })
 
+route.get('/', async (_req, res) => {
+  const users = await User.getUsers();
+  res.status(200).json(users);
+})
+
 module.exports = route;

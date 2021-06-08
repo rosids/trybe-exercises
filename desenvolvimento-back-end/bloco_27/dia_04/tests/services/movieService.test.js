@@ -3,6 +3,7 @@ const { expect } = require('chai');
 
 const MoviesModel = require('../../models/movieModel');
 const MoviesService = require('../../services/movieService');
+const { ObjectId } = require('mongodb');
 
 describe('Busca todos os filmes no BD', () => {
   describe('quando não existe nenhum filme criado', () => {
@@ -121,5 +122,52 @@ describe('Insere um novo filme no BD', () => {
       expect(response).to.have.a.property('id');
     });
 
+  });
+});
+
+describe.only('É possível pesquisar um filme pelo ID', () => {
+  describe('Quando o filme é encontrado', () => {
+    const movieId = ObjectId();
+    beforeEach(async () => {
+      const payloadMovie = {
+        _id: movieId,
+        title: 'Example Movie',
+        directedBy: 'Jane Dow',
+        releaseYear: 1999,
+      };
+      
+      sinon.stub(MoviesModel, 'findById').resolves(payloadMovie);
+    });
+    
+    afterEach(() => MoviesModel.findById.restore());
+    
+    it('Retorna um objeto', async () => {
+      const result = await MoviesService.findById(movieId);
+      expect(result).to.be.a('object');
+    });
+    
+    it('ID usado como parametro está sendo usado', async () => {
+      await MoviesService.findById(movieId);
+      expect(MoviesModel.findById.calledWith(movieId)).to.be.true;
+    });
+  });
+
+  describe('Quando o filme não é encontrado', () => {
+    const error = {
+      error: {
+        code: 'not_found',
+        message: 'Filme não encontrado',
+      },
+    };
+
+    beforeEach(async () => {
+      sinon.stub(MoviesModel, 'findById').resolves(null);
+    });
+
+    afterEach(() => MoviesModel.findById.restore());
+    it('Retorna um objeto de error', async() => {
+      const result = await MoviesService.findById('jhfjhdjsh');
+      expect(result).to.deep.equal(error);
+    });
   });
 });

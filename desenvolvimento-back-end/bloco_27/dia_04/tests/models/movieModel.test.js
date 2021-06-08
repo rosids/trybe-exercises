@@ -1,6 +1,6 @@
 const sinon = require('sinon');
 const { expect } = require('chai');
-const { MongoClient } = require('mongodb');
+const { MongoClient, ObjectId } = require('mongodb');
 const { MongoMemoryServer } = require('mongodb-memory-server');
 
 const MoviesModel = require('../../models/movieModel');
@@ -136,5 +136,58 @@ describe('Insere um novo filme no BD', () => {
       expect(response).to.have.a.property('id');
     });
 
+  });
+});
+
+describe.only('É possível pesquisar um filme pelo ID', () => {
+  let conn = null;
+
+  beforeEach(async () => {
+    const mongoDB = new MongoMemoryServer();
+    const uri = await mongoDB.getUri();
+    conn = await MongoClient.connect(uri, {
+      useUnifiedTopology: true,
+      useNewUrlParser: true,
+    });
+
+    sinon.stub(MongoClient, 'connect').resolves(conn);
+  });
+
+  afterEach(() => {
+    MongoClient.connect.restore();
+  });
+
+  describe('Quando o filme é encontrado', () => {
+    let movieId = null;
+    beforeEach(async () => {
+      const payloadMovie = {
+        title: 'Example Movie',
+        directedBy: 'Jane Dow',
+        releaseYear: 1999,
+      };
+
+      const db = await conn.db('model_example');
+      const { insertedId } = await db.collection('movies').insertOne(payloadMovie);
+      movieId = insertedId;
+    })
+
+    it('Retorna um objeto', async () => {
+      const result = await MoviesModel.findById(movieId);
+      expect(result).to.be.a('object');
+    });
+  });
+
+  describe('Quando o filme não é encontrado', () => {
+    it('Retorna nulo', async () => {
+      const result = await MoviesModel.findById(ObjectId());
+      expect(result).to.be.null;
+    });
+  });
+
+  describe('Quando o ID for inválido', () => {
+    it('Retorna nulo', async() => {
+      const result = await MoviesModel.findById('jdhjshdjsh');
+      expect(result).to.be.null;
+    });
   });
 });

@@ -6,6 +6,8 @@ const app = express();
 
 app.use(express.json());
 
+app.get('/movies/:id', MovieController.findById);
+
 app.get('/movies', MovieController.getAll);
 
 app.post('/movies', MovieController.create);

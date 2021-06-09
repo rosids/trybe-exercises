@@ -3,6 +3,7 @@ const { expect } = require('chai');
 
 const MoviesService = require('../../services/movieService');
 const MoviesController = require('../../controllers/movieController');
+const { ObjectId } = require('mongodb');
 
 describe('Ao chamar o controller de getAll', () => {
   describe('quando não existem filmes no banco de dados', async () => {
@@ -152,5 +153,66 @@ describe('Ao chamar o controller de create', () => {
       expect(response.send.calledWith('Filme criado com sucesso!')).to.be.equal(true);
     });
 
+  });
+});
+
+describe('É possível pesquisar um filme pelo ID', () => {
+  let request, response, payloadMovie;
+  beforeEach(() => {
+    response = {};
+    request = {};
+    response.json = sinon.stub().returns();
+    response.status = sinon.stub().returns(response);
+  });
+  
+  describe('Quando o filme é encontrado', () => {
+    let movieId;
+
+    beforeEach(async () => {
+      movieId = ObjectId();
+      request.params = { id: movieId };
+      payloadMovie = {
+        _id: movieId,
+        title: 'Example Movie',
+        directedBy: 'Jane Dow',
+        releaseYear: 1999,
+      };
+
+      sinon.stub(MoviesService, 'findById').resolves(payloadMovie);
+    });
+
+    afterEach(() => MoviesService.findById.restore());
+
+    it('Response.json é chamado como objeto do filme', async () => {
+      await MoviesController.findById(request, response);
+      expect(response.json.calledWith(payloadMovie)).to.be.true;
+    });
+
+    it('ID usado como parametro está sendo usado', async () => {
+      await MoviesController.findById(request, response);
+      expect(MoviesService.findById.calledWith(request.params.id)).to.be.true;
+      expect(response.status.calledWith(200)).to.be.equal(true);
+    });
+  });
+
+  describe('Quando o filme não é encontrado', () => {
+    const error = {
+      error: {
+        code: 'not_found',
+        message: 'Filme não encontrado',
+      },
+    };
+
+    beforeEach(async () => {
+      request.params = { id: ObjectId() };
+      sinon.stub(MoviesService, 'findById').resolves(null);
+    });
+
+    afterEach(() => MoviesService.findById.restore());
+    it('Retorna um objeto de error', async() => {
+      await MoviesController.findById(request, response);
+      expect(response.json.calledWith(error)).to.be.true;
+      expect(response.status.calledWith(404)).to.be.equal(true);
+    });
   });
 });

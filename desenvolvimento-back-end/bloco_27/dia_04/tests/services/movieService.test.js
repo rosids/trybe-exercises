@@ -125,7 +125,7 @@ describe('Insere um novo filme no BD', () => {
   });
 });
 
-describe.only('É possível pesquisar um filme pelo ID', () => {
+describe('É possível pesquisar um filme pelo ID', () => {
   describe('Quando o filme é encontrado', () => {
     const movieId = ObjectId();
     beforeEach(async () => {

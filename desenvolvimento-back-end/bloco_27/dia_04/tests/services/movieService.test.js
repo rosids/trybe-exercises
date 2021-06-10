@@ -171,3 +171,46 @@ describe('É possível pesquisar um filme pelo ID', () => {
     });
   });
 });
+
+describe('É possível remover um filme', () => {
+  afterEach(() => {
+    MoviesModel.remove.restore();
+  });
+
+  describe('Quando o filme for removido com sucesso', () => {
+    let payloadMovie;
+    const movieId = ObjectId();
+
+    beforeEach(async () => {
+      payloadMovie = {
+        _id: movieId,
+        title: 'Example Movie',
+        directedBy: 'Jane Dow',
+        releaseYear: 1999,
+      };
+  
+      sinon.stub(MoviesModel, 'remove').resolves(payloadMovie);
+    });
+
+    it('Retorna um objeto', async () => {
+      const result = await MoviesService.remove(movieId);
+      expect(result).to.deep.equal(payloadMovie);
+    });
+
+    it('ID recebido como parametro é usado para remoção', async() => {
+      await MoviesService.remove(movieId);
+      expect(MoviesModel.remove.calledWith(movieId)).to.be.true;
+    })
+  });
+
+  describe('Quando o filme não é removido com sucesso', () => {
+    beforeEach(() => {
+      sinon.stub(MoviesModel, 'remove').resolves(null);
+    });
+
+    it('Retorna nulo', async () => {
+      const result = await MoviesService.remove(ObjectId());
+      expect(result).to.be.null;
+    });
+  });
+});

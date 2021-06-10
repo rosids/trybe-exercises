@@ -34,8 +34,18 @@ const findById = async (id) => {
   return result;
 }
 
+const remove = async(id) => {
+  if(!ObjectId.isValid(id)) return null;
+  const movie = await findById(id);
+  if(!movie) return null;
+  const conn = await connection();
+  await conn.collection('movies').deleteOne({_id: ObjectId(id)});
+  return movie;
+}
+
 module.exports = {
   create,
   getAll,
   findById,
+  remove,
 };

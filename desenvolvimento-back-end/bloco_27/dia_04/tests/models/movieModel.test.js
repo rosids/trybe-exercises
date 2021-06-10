@@ -191,3 +191,48 @@ describe('É possível pesquisar um filme pelo ID', () => {
     });
   });
 });
+
+describe('É possível remover um filme', () => {
+  let conn = null;
+
+  beforeEach(async () => {
+    const mongoDB = new MongoMemoryServer();
+    const uri = await mongoDB.getUri();
+    conn = await MongoClient.connect(uri, {
+      useUnifiedTopology: true,
+      useNewUrlParser: true,
+    });
+
+    sinon.stub(MongoClient, 'connect').resolves(conn);
+  });
+
+  afterEach(() => {
+    MongoClient.connect.restore();
+  });
+
+  describe('Quando o filme for removido com sucesso', () => {
+    let movieId, payloadMovie;
+    beforeEach(async () => {
+      payloadMovie = {
+        title: 'Example Movie',
+        directedBy: 'Jane Dow',
+        releaseYear: 1999,
+      };
+      const db = await conn.db('model_example');
+      const { insertedId } = await db.collection('movies').insertOne({...payloadMovie});
+      movieId = insertedId;
+    });
+
+    it('Retorna um objeto', async () => {
+      const result = await MoviesModel.remove(movieId);
+      expect(result).to.deep.equal({...payloadMovie, _id: movieId});
+    });
+  });
+
+  describe('Quando o filme não é removido com sucesso', () => {
+    it('Retorna nulo', async () => {
+      const result = await MoviesModel.remove(ObjectId());
+      expect(result).to.be.null;
+    });
+  });
+});

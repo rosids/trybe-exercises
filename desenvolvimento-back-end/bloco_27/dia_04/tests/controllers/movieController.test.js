@@ -4,6 +4,7 @@ const { expect } = require('chai');
 const MoviesService = require('../../services/movieService');
 const MoviesController = require('../../controllers/movieController');
 const { ObjectId } = require('mongodb');
+const { beforeEach } = require('mocha');
 
 describe('Ao chamar o controller de getAll', () => {
   describe('quando não existem filmes no banco de dados', async () => {
@@ -213,6 +214,73 @@ describe('É possível pesquisar um filme pelo ID', () => {
       await MoviesController.findById(request, response);
       expect(response.json.calledWith(error)).to.be.true;
       expect(response.status.calledWith(404)).to.be.equal(true);
+    });
+  });
+});
+
+describe.only('É possível remover um filme', () => {
+  let request, response;
+
+  beforeEach(() => {
+    request = {};
+    response = {};
+    response.status = sinon.stub().returns(response);
+    response.json = sinon.stub().returns();
+    response.send = sinon.stub().returns();
+  });
+
+  describe('Quando o filme for removido com sucesso', () => {
+    const movieId = ObjectId();
+    const payloadMovie = {
+      _id: movieId,
+      title: 'Example Movie',
+      directedBy: 'Jane Dow',
+      releaseYear: 1999,
+    };
+
+    afterEach(() => {
+      MoviesService.remove.restore();
+    });
+
+    beforeEach(async () => {
+      request.params = { id: movieId };
+      sinon.stub(MoviesService, 'remove').resolves(payloadMovie);
+    });
+
+    it('Retorna o status 200', async () => {
+      await MoviesController.remove(request, response);
+      expect(response.status.calledWith(200)).to.be.true;
+    });
+
+    it('Retorna um objeto', async () => {
+      await MoviesController.remove(request, response);
+      expect(response.json.calledWith(payloadMovie)).to.be.true;
+    });
+
+    it('ID recebido por parametro é utilizado', async () => {
+      await MoviesController.remove(request, response);
+      expect(MoviesService.remove.calledWith(movieId)).to.be.true;
+    })
+  });
+
+  describe('Quando o filme não é removido com sucesso', () => {
+    beforeEach(() => {
+      request.params = { id: ObjectId() };
+      sinon.stub(MoviesService, 'remove').resolves(null);
+    });
+
+    afterEach(() => {
+      MoviesService.remove.restore();
+    });
+
+    it('Retorna mensagem de erro', async () => {
+      await MoviesController.remove(request, response);
+      expect(response.send.calledWith('O filme não foi removido.')).to.be.true;
+    });
+
+    it('Retorna o status 400', async () => {
+      await MoviesController.remove(request, response);
+      expect(response.status.calledWith(400)).to.be.true;
     });
   });
 });

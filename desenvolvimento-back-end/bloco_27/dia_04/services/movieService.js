@@ -44,10 +44,17 @@ const findById = async(id) => {
   };
 
   return result;
-}
+};
+
+const remove = async(id) => {
+  const removedMovie = await MoviesModel.remove(id);
+  if(!removedMovie) return null;
+  return removedMovie;
+};
 
 module.exports = {
   create,
   getAll,
   findById,
+  remove,
 };

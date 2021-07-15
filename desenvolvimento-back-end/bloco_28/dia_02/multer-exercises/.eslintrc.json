@@ -1,0 +1,8 @@
+{
+  "extends": [
+    "trybe-backend"
+  ],
+  "rules": {
+    "no-trailing-spaces": ["error", { "skipBlankLines": false }]
+  }
+}

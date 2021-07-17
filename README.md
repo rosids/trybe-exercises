@@ -192,7 +192,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 26-4: _Express: HTTP com Node.js_
 - [ ] 26-5: _Práticando Express_
 - [ ] 26-6: _Arquitetura de Software - Introdução ao MVC_
-- [ ] 26-7: _[Projeto - Cookmaster]()_
+- [x] 26-7: _[Projeto - Talker Manager](https://github.com/tryber/sd-08-project-talker-manager/pull/54)_
 
 ##### Bloco 27: NodeJS: Camada de Serviço & Arquitetura Rest e Restful
 
@@ -200,41 +200,38 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 27-2: _Arquitetura de Software - Camada de Controller e Service_
 - [ ] 27-3: _Arquitetura de web - Rest e Restful_
 - [x] 27.4: _Arquitetura de Software - Testando as Camadas_
-- [ ] 27-5: _[Projeto - Store Manager]()_
+- [x] 27-5: _[Projeto - Store Manager](https://github.com/tryber/sd-08-store-manager/pull/48)_
 
 ##### Bloco 28: NodeJS: Autenticação & Upload de Arquivos
 
 - [ ] 28-1: _NodeJS - JWT - (JSON Web Token)_
 - [x] 28-2: _NodeJS - Upload de arquivos com Multer_
-- [ ] 28-3: _[Projeto - Cookmaster V2]()_
+- [x] 28-3: _[Projeto - Cookmaster](https://github.com/tryber/sd-08-cookmaster/pull/35)_
 
 ##### Bloco 29: Deployment
 
 - [ ] 29-1: _Infraestrutura - Deploy com Heroku_
 - [ ] 29-2: _Deploy - Gerenciadores de Processos_
-- [ ] 29-3: _[Projeto - Stranger Things]()
+- [x] 29-3: _[Projeto - Stranger Things - Backend](https://github.com/tryber/sd-08-stranger-things-backend/pull/31)
+- [x] 29-3: _[Projeto - Stranger Things - Frontend](https://github.com/tryber/sd-08-stranger-things-frontend/pull/27)
+##### Bloco 30: Arquitetura: SOLID & ORM
 
-##### Bloco 30: Projeto Trybeer
+- [ ] 30-1: _Arquitetura - Princípios SOLID_
+- [ ] 30-2: _ORM - Interface da aplicação com o banco de dados_
+- [ ] 30-3: _ORM - Associations_
+- [x] 30-4: _[Projeto - API de Blogs](https://github.com/tryber/sd-08-project-blogs-api/pull/31)_
 
-- [ ] 30-1: _[Projeto - Trybeer]()_
+##### Bloco 31: Sockets
 
-##### Bloco 31: Arquitetura: SOLID & ORM
+- [ ] 31-1: _Arquitetura de Software - Camada de View_
+- [ ] 31-2: _Sockets - TCP/UDP & NET_
+- [ ] 31-3: _Sockets - Socket.io_
+- [ ] 31-4: _Praticando Socket.io_
+- [ ] 31-5: _[Projeto - Webchat]()_
 
-- [ ] 31-1: _Arquitetura - Princípios SOLID_
-- [ ] 31-2: _ORM - Interface da aplicação com o banco de dados_
-- [ ] 31-3: _ORM - Associations_
-- [ ] 31-4: _Boas práticas na escrita de testes_
-- [ ] 31-5: _[Projeto - API de Blogs]()_
+##### Bloco 32: Projeto Trybeer
 
-##### Bloco 32: Sockets
-
-- [ ] 32-1: _Sockets - TCP/UDP & NET_
-- [ ] 32-2: _Sockets - Socket.io_
-- [ ] 32-3: _[Projeto - Webchat]()_
-
-##### Bloco 33: Projeto Trybeer II
-
-- [ ] 33-1: _[Projeto - Trybeer V2]()_
+- [ ] 32-1: _[Projeto - Trybeer]()_
 
 ## Ciência da Computação :hourglass_flowing_sand:
 

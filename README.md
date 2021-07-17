@@ -225,7 +225,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [ ] 31-1: _Arquitetura de Software - Camada de View_
 - [ ] 31-2: _Sockets - TCP/UDP & NET_
-- [ ] 31-3: _Sockets - Socket.io_
+- [x] 31-3: _Sockets - Socket.io_
 - [ ] 31-4: _Praticando Socket.io_
 - [ ] 31-5: _[Projeto - Webchat]()_
 

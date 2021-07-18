@@ -188,17 +188,16 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 26-1: _NodeJS - Introdução_
 - [ ] 26-2: _NodeJS - Fluxo Assíncrono_
-- [ ] 26-3: _NodeJS - Arquitetura_
+- [ ] 26-3: _Testes com NodeJS_
 - [ ] 26-4: _Express: HTTP com Node.js_
 - [ ] 26-5: _Práticando Express_
-- [ ] 26-6: _Arquitetura de Software - Introdução ao MVC_
-- [x] 26-7: _[Projeto - Talker Manager](https://github.com/tryber/sd-08-project-talker-manager/pull/54)_
+- [x] 26-6: _[Projeto - Talker Manager](https://github.com/tryber/sd-08-project-talker-manager/pull/54)_
 
 ##### Bloco 27: NodeJS: Camada de Serviço & Arquitetura Rest e Restful
 
 - [ ] 27-1: _Arquitetura de Software - Camada de Model_
 - [ ] 27-2: _Arquitetura de Software - Camada de Controller e Service_
-- [ ] 27-3: _Arquitetura de web - Rest e Restful_
+- [ ] 27-3: _Arquitetura de Web - Rest e Restful_
 - [x] 27.4: _Arquitetura de Software - Testando as Camadas_
 - [x] 27-5: _[Projeto - Store Manager](https://github.com/tryber/sd-08-store-manager/pull/48)_
 

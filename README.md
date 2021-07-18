@@ -190,7 +190,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 26-2: _NodeJS - Fluxo Assíncrono_
 - [ ] 26-3: _Testes com NodeJS_
 - [ ] 26-4: _Express: HTTP com Node.js_
-- [ ] 26-5: _Práticando Express_
+- [x] 26-5: _Práticando Express_
 - [x] 26-6: _[Projeto - Talker Manager](https://github.com/tryber/sd-08-project-talker-manager/pull/54)_
 
 ##### Bloco 27: NodeJS: Camada de Serviço & Arquitetura Rest e Restful

@@ -182,3 +182,8 @@ db.movies.createIndex({ description: 'text' });
 db.movies.find({
   $text: { $search: 'vacation' },
 });
+
+// Exercício 22
+db.movies.find({
+  $text: { $search: 'monstrous criminal' },
+});

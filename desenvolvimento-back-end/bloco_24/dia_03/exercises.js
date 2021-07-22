@@ -164,3 +164,8 @@ db.movies.updateOne(
     },
   },
 );
+
+// Exercício 18
+db.movies.find({
+  description: { $regex: /^The/ },
+});

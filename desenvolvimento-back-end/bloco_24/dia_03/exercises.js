@@ -80,3 +80,12 @@ db.movies.find(
   },
   { _id: 0, title: 1, ratings: 1 },
 );
+
+// Exercício 9
+db.movies.find(
+  { 
+    ratings: { $elemMatch: { $gt: 103 } },
+    category: { $all: ['adventure'] },
+  },
+  { _id: 0, title: 1, ratings: 1, category: 1 },
+);

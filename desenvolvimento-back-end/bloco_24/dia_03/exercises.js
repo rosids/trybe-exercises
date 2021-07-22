@@ -187,3 +187,8 @@ db.movies.find({
 db.movies.find({
   $text: { $search: 'monstrous criminal' },
 });
+
+// Exercício 23
+db.movies.find({
+  $text: { $search: '\'when he is accidentally\'' },
+});

@@ -12,3 +12,15 @@ db.movies.find({
   },
   imdbRating: { $gt: 7 },
 });
+
+// Exercício 3
+db.movies.updateOne(
+  { title: 'Batman'},
+  {
+    $push: {
+      ratings: {
+        $each: [85, 100, 102, 105],
+      },
+    },
+  },
+);

@@ -118,3 +118,19 @@ db.movies.find(
   },
   { _id: 0, title: 1, ratings: 1, category: 1 },
 );
+
+// Exercício 14
+db.movies.find({
+  ratings: { $size: 4 },
+  $or: [
+    { category: 'adventure' },
+    { category:'family' },
+  ],
+  imdbRating: { $gt: 7 },
+});
+//ou 
+db.movies.find({
+  ratings: { $size: 4 },
+  category: { $in: ['adventure', 'family'] },
+  imdbRating: { $not: { $lt: 7 } },
+});

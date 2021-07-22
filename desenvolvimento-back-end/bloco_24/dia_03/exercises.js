@@ -174,3 +174,6 @@ db.movies.find({
 db.movies.find({
   description: { $regex: /humanity.$/ },
 });
+
+// Exercíco 20
+db.movies.createIndex({ description: 'text' });

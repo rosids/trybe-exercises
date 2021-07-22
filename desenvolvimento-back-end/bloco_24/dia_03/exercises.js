@@ -50,3 +50,13 @@ db.movies.updateOne(
   },
   { upsert: true },
 );
+
+// Exercício 6
+db.movies.find(
+  {
+    ratings: {
+      $elemMatch: { $gt: 103 }
+    },
+  },
+  { _id: 0, title: 1, ratings: 1},
+);

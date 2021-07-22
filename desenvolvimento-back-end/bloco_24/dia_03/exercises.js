@@ -141,6 +141,16 @@ db.movies.updateOne(
   {
     $set: { 
       description: 'The Dark Knight of Gotham City begins his war on crime with his first major enemy being Jack Napier, a criminal who becomes the clownishly homicidal Joker.',
-    }
+    },
+  },
+);
+
+// Exercício 16
+db.movies.updateOne(
+  { title: 'Godzilla' },
+  {
+    $set: {
+      description: 'The world is beset by the appearance of monstrous creatures, but one of them may be the only one who can save humanity.',
+    },
   },
 );

@@ -4,3 +4,11 @@ db.movies.find({
     $all: ['action', 'adventure'],
   },
 });
+
+// Exercício 02
+db.movies.find({
+  category: {
+    $all: ['action'],
+  },
+  imdbRating: { $gt: 7 },
+});

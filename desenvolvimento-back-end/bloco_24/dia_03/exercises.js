@@ -101,3 +101,9 @@ db.movies.find(
   { ratings: { $size: 4 } },
   { _id: 0, title: 1 },
 );
+
+// Exercício 12
+db.movies.find({
+  budget: { $mod: [5, 0] },
+  category: { $size: 2 },
+});

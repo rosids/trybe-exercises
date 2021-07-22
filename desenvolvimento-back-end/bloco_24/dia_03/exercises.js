@@ -169,3 +169,8 @@ db.movies.updateOne(
 db.movies.find({
   description: { $regex: /^The/ },
 });
+
+// Exercício 19
+db.movies.find({
+  description: { $regex: /humanity.$/ },
+});

@@ -4,4 +4,6 @@ const router = express.Router();
 
 router.get('/', middlewareSimpsons.getSimpsons);
 
+router.get('/:id', middlewareSimpsons.getSimpsonsById);
+
 module.exports = router;

@@ -1,3 +1,9 @@
 module.exports = (err, _req, res, _next) => {
-  res.stautus(500).json(err);
+  if (err.isBoom) {
+    const { statusCode, message } = err.output.payload;
+    return res.status(statusCode).json({ message });
+  }
+
+  console.log(err);
+  res.status(500).json(err);
 };

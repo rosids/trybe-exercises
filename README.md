@@ -175,7 +175,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 24-1: _Updates Simples_
 - [x] 24-2: _Updates Complexos - Arrays - Parte 1_
-- [ ] 24-3: _Updates Complexos - Arrays - Parte 2_
+- [x] 24-3: _Updates Complexos - Arrays - Parte 2_
 - [x] 24-4: _[Projeto - Commerce](https://github.com/tryber/sd-08-mongodb-commerce/pull/51)_
 
 ##### Bloco 25: MongoDB: Aggregation Framework
@@ -190,7 +190,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [ ] 26-2: _NodeJS - Fluxo Assíncrono_
 - [ ] 26-3: _Testes com NodeJS_
 - [x] 26-4: _Express: HTTP com Node.js_
-- [ ] 26-5: _Práticando Express_
+- [x] 26-5: _Práticando Express_
 - [x] 26-6: _[Projeto - Talker Manager](https://github.com/tryber/sd-08-project-talker-manager/pull/54)_
 
 ##### Bloco 27: NodeJS: Camada de Serviço & Arquitetura Rest e Restful

@@ -6,4 +6,6 @@ router.get('/', middlewareSimpsons.getSimpsons);
 
 router.get('/:id', middlewareSimpsons.getSimpsonsById);
 
+router.post('/', middlewareSimpsons.createSimpson);
+
 module.exports = router;

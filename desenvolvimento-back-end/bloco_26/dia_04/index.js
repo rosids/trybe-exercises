@@ -12,5 +12,7 @@ app.use('/hello', routes.hello);
 
 app.use('/greetings', routes.greetings);
 
+app.use('/users', routes.users);
+
 const { PORT = 3000 } = process.env;
 app.listen(PORT, () => console.log(`Ouvindo na porta ${PORT}`));

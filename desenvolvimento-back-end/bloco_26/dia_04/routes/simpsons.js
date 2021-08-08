@@ -1,11 +1,12 @@
 const express = require('express');
-const middlewareSimpsons = require('../middlewares/simpsons');
+const middlewares = require('../middlewares');
+
 const router = express.Router();
 
-router.get('/', middlewareSimpsons.getSimpsons);
+router.get('/', middlewares.auth, middlewares.simpsons.getSimpsons);
 
-router.get('/:id', middlewareSimpsons.getSimpsonsById);
+router.get('/:id', middlewares.auth, middlewares.simpsons.getSimpsonsById);
 
-router.post('/', middlewareSimpsons.createSimpson);
+router.post('/', middlewares.auth, middlewares.simpsons.createSimpson);
 
 module.exports = router;

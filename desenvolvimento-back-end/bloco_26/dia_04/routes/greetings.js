@@ -1,8 +1,9 @@
 const express = require('express');
+const middlewares = require('../middlewares/');
 
 const router = express.Router();
 
-router.post('/', (req, res) => {
+router.post('/', middlewares.auth, (req, res) => {
   const { name, age } = req.body;
 
   if (!age || age <= 17)

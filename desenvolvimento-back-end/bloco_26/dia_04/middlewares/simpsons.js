@@ -35,7 +35,10 @@ const createSimpson = rescue(async (req, res, next) => {
     { abortEarly: false }
   );
 
-  if (error) next(error);
+  if (error) {
+    const newError = { isJoi: true, status: 'badRequest', ...error };
+    return next(newError);
+  }
 
   const simpsons = await readSimpsons();
   const findId = findById(simpsons, id);

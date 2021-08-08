@@ -17,6 +17,8 @@ app.use('/users', routes.users);
 
 app.use('/simpsons', routes.simpsons);
 
+app.use('/signup', routes.signup);
+
 app.use(middlewareError);
 
 const { PORT = 3000 } = process.env;

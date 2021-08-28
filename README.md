@@ -43,10 +43,10 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-4: _JavaScript - Web Storage_
 - [x] 5-5: _[Projeto - Arte com Pixels](https://github.com/tryber/sd-08-project-pixels-art/pull/15)_
 - [x] 5-6: _[Projeto - Lista de tarefas](https://github.com/tryber/sd-08-project-todo-list/pull/4)_
-- [ ] 5-7: _[Projeto - Meme Generator]()_ <strong>*</strong>
-- [ ] 5-7: _[Projeto - Adivinhe a Cor]()_  <strong>*</strong>
-- [ ] 5-7: _[Projeto - Carta Misteriosa]()_ <strong>* </strong> 
-<br> <strong>* Bônus</strong>
+- [ ] 5-7: _[Projeto - Meme Generator]()_ <strong>\*</strong>
+- [ ] 5-7: _[Projeto - Adivinhe a Cor]()_ <strong>\*</strong>
+- [ ] 5-7: _[Projeto - Carta Misteriosa]()_ <strong>_ </strong>
+      <br> <strong>_ Bônus</strong>
 
 ##### Bloco 6: HTML & CSS: Forms, Flexbox & Responsivo
 
@@ -211,8 +211,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [ ] 29-1: _Infraestrutura - Deploy com Heroku_
 - [ ] 29-2: _Deploy - Gerenciadores de Processos_
-- [x] 29-3: _[Projeto - Stranger Things - Backend](https://github.com/tryber/sd-08-stranger-things-backend/pull/31)
-- [x] 29-3: _[Projeto - Stranger Things - Frontend](https://github.com/tryber/sd-08-stranger-things-frontend/pull/27)
+- [x] 29-3: \_[Projeto - Stranger Things - Backend](https://github.com/tryber/sd-08-stranger-things-backend/pull/31)
+- [x] 29-3: \_[Projeto - Stranger Things - Frontend](https://github.com/tryber/sd-08-stranger-things-frontend/pull/27)
+
 ##### Bloco 30: Arquitetura: SOLID & ORM
 
 - [ ] 30-1: _Arquitetura - Princípios SOLID_
@@ -244,7 +245,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 34: Programação Orientada a Objetos e Padrões de Projeto
 
-- [ ] 34-1: _Introdução à programação orientada a objetos_
+- [x] 34-1: _Introdução à programação orientada a objetos_
 - [ ] 34-2: _Herança, Composição e Interfaces_
 - [ ] 34-3: _Padrões de projeto_
 - [ ] 34-4: _[Projeto - Relatórios de Estoque]()_

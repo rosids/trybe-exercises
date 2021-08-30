@@ -35,6 +35,10 @@ Vamos juntar tudo o que aprendemos até aqui e exercitar mais ainda nosso aprend
 
 3.  Agora utilizando o wget, pegue o conteúdo da página do site da Trybe, depois abra o arquivo HTML baixado em seu navegador. Faça o mesmo processo com outras páginas web.
 
+    ```bash
+     wget betrybe.com
+    ```
+
 4.  Agora iremos para a camada de transporte. Crie um servidor TCP usando o módulo [socketserver](https://docs.python.org/3/library/socketserver.html) que já vem embutido com o Python. Nosso servidor TCP deverá:
 
     1. Responder com um "Olá, client", logo quando estabelecer uma conexão.

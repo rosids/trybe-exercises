@@ -10,6 +10,16 @@ Vamos juntar tudo o que aprendemos até aqui e exercitar mais ainda nosso aprend
     2. Faça uma chamada POST, utilizando o cURL, passando um JSON no body da requisição.
     3. Faça uma chamada qualquer, utilizando o cURL, passando um header na requisição.
 
+    **RESPOSTA**:
+
+    ```bash
+    curl -X GET https://viacep.com.br/ws/01001000/json/
+
+    curl -X POST -d "userId=1&title=titulo da tarefa&completed=false" https://jsonplaceholder.typicode.com/todos
+
+    curl -i -H "Content-Type: application/json" https://viacep.com.br/ws/01001000/json/
+    ```
+
 2.  Ainda utilizando o cURL, vamos explorar mais alguns conceitos do HTTP. Relembre que falamos que o HTTP organiza e dá significado aos dados encapsulados nessa camada. Por exemplo: ao vermos um 200 tanto nós quanto um client HTTP sabemos que aquela request foi realizada com sucesso. Vamos explorar isso com o cURL.
 
     1. Faça uma chamada GET, utilizando o cURL, para "_google.com_".

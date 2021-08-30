@@ -25,6 +25,14 @@ Vamos juntar tudo o que aprendemos até aqui e exercitar mais ainda nosso aprend
     1. Faça uma chamada GET, utilizando o cURL, para "_google.com_".
     2. Perceba que foi retornado um _301_. Isso quer dizer que existem diversos redirecionamentos que nos encaminham para o lugar certo. No caso, o caminho certo para a página do google é *www.google.com*. Ao acessarmos pelo navegador, não percebemos isso porquê ele faz o redirecionamento para a página certa para nós ao encontrar o _301_, porém, se você inspecionar a network você irá identificar esse redirecionamento. Faça uma nova chamada a "google.com", porém agora utilizando o parâmetro _-L_ ou _--location_, que serve para "seguir redirecionamentos".
 
+    **RESPOSTA:**
+
+    ```bash
+    curl -X GET https://google.com
+
+    curl --location -X GET https://google.com
+    ```
+
 3.  Agora utilizando o wget, pegue o conteúdo da página do site da Trybe, depois abra o arquivo HTML baixado em seu navegador. Faça o mesmo processo com outras páginas web.
 
 4.  Agora iremos para a camada de transporte. Crie um servidor TCP usando o módulo [socketserver](https://docs.python.org/3/library/socketserver.html) que já vem embutido com o Python. Nosso servidor TCP deverá:

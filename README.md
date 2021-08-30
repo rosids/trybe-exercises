@@ -245,7 +245,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 34: Programação Orientada a Objetos e Padrões de Projeto
 
-- [ ] 34-1: _Introdução à programação orientada a objetos_
+- [x] 34-1: _Introdução à programação orientada a objetos_
 - [ ] 34-2: _Herança, Composição e Interfaces_
 - [ ] 34-3: _Padrões de projeto_
 - [x] 34-4: _[Projeto - Relatórios de Estoque](https://github.com/tryber/sd-08-inventory-report/pull/52)_
